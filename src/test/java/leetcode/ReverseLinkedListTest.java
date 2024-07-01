@@ -4,13 +4,9 @@ import leetcode.utils.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
 class ReverseLinkedListTest {
 
-    ReverseLinkedList solution = new ReverseLinkedList();
+    _206_ReverseLinkedList solution = new _206_ReverseLinkedList();
 
     @Test
     void reverseList() {

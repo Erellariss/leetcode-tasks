@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FloodFillTest {
 
-    FloodFill testee = new FloodFill();
+    _733_FloodFill testee = new _733_FloodFill();
 
     @Test
     void floodFill() {

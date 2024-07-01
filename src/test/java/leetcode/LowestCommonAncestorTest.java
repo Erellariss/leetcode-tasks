@@ -10,7 +10,7 @@ import static java.util.Arrays.asList;
 
 class LowestCommonAncestorTest {
 
-    private LowestCommonAncestor testee = new LowestCommonAncestor();
+    private _235_LowestCommonAncestor testee = new _235_LowestCommonAncestor();
 
     @Test
     void lowestCommonAncestor1() {

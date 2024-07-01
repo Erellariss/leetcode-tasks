@@ -1,6 +1,6 @@
 package leetcode;
 
-public class RansomNote {
+public class _383_RansomNote {
 
     public boolean canConstruct(String ransomNote, String magazine) {
         int[] chars = new int['z' - 'a' + 1];

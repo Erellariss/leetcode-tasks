@@ -2,7 +2,7 @@ package leetcode;
 
 import leetcode.utils.ListNode;
 
-public class LinkedListCycle {
+public class _141_LinkedListCycle {
     public boolean hasCycle(ListNode head) {
         if (head == null) {
             return false;

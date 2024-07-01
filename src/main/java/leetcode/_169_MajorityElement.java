@@ -1,6 +1,6 @@
 package leetcode;
 
-public class MajorityElement {
+public class _169_MajorityElement {
 
     // Boyer-Moore Majority Voting Algorithm
     public int majorityElement(int[] nums) {

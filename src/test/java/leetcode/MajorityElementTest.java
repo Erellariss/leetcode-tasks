@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MajorityElementTest {
 
-    MajorityElement solution = new MajorityElement();
+    _169_MajorityElement solution = new _169_MajorityElement();
 
     @Test
     void case1() {

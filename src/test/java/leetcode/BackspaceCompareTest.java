@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BackspaceCompareTest {
 
-    private BackspaceCompare solution = new BackspaceCompare();
+    private _844_BackspaceCompare solution = new _844_BackspaceCompare();
 
     @Test
     void backspaceCompare() {

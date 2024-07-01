@@ -4,14 +4,13 @@ import leetcode.utils.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 
 class BalancedBinaryTreeTest {
 
-    private BalancedBinaryTree solution = new BalancedBinaryTree();
+    private _110_BalancedBinaryTree solution = new _110_BalancedBinaryTree();
 
     @Test
     void isBalanced() {

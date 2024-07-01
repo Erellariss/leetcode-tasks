@@ -1,6 +1,6 @@
 package leetcode;
 
-public class BestTimeToBuySellStock {
+public class _121_BestTimeToBuySellStock {
     public static int maxProfit(int[] prices) {
         if (prices.length == 0) {
             return 0;

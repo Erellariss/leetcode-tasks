@@ -1,6 +1,6 @@
 package leetcode;
 
-public class LongestPalindrome {
+public class _409_LongestPalindrome {
     public int longestPalindrome(String s) {
         int[] letters = new int['z' - 'A' + 1];
 

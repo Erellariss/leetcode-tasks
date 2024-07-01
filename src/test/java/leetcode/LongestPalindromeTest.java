@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LongestPalindromeTest {
 
-    LongestPalindrome longestPalindrome = new LongestPalindrome();
+    _409_LongestPalindrome longestPalindrome = new _409_LongestPalindrome();
 
     @Test
     void longestPalindrome() {

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddBinaryTest {
 
-    AddBinary solution = new AddBinary();
+    _67_AddBinary solution = new _67_AddBinary();
 
     @Test
     void case1() {

@@ -1,7 +1,6 @@
 package leetcode;
 
 import leetcode.utils.ListNode;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LinkedListCycleTest {
 
-    private final LinkedListCycle solution = new LinkedListCycle();
+    private final _141_LinkedListCycle solution = new _141_LinkedListCycle();
 
     @Test
     void hasCycle1() {

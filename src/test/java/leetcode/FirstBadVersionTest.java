@@ -25,6 +25,6 @@ class FirstBadVersionTest {
     }
 
     private static void verifyCase(int n, int bad) {
-        Assertions.assertEquals(bad, new FirstBadVersion(bad).firstBadVersion(n));
+        Assertions.assertEquals(bad, new _278_FirstBadVersion(bad).firstBadVersion(n));
     }
 }

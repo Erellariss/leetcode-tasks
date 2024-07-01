@@ -2,9 +2,9 @@ package leetcode;
 
 import leetcode.utils.VersionControl;
 
-public class FirstBadVersion extends VersionControl {
+public class _278_FirstBadVersion extends VersionControl {
 
-    public FirstBadVersion(int badVersion) {
+    public _278_FirstBadVersion(int badVersion) {
         super(badVersion);
     }
 

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class BackspaceCompare {
+public class _844_BackspaceCompare {
 
     public boolean backspaceCompare(String a, String b) {
         int aPointer, bPointer, aSkip, bSkip;

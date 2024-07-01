@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BinarySearchTest {
 
-    BinarySearch testee = new BinarySearch();
+    _704_BinarySearch testee = new _704_BinarySearch();
 
     @Test
     void search() {

@@ -2,7 +2,7 @@ package leetcode;
 
 import leetcode.utils.TreeNode;
 
-public class LowestCommonAncestor {
+public class _235_LowestCommonAncestor {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         TreeNode result = root;

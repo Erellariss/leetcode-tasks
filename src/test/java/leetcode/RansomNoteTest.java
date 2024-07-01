@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RansomNoteTest {
 
-    RansomNote solution = new RansomNote();
+    _383_RansomNote solution = new _383_RansomNote();
 
     @Test
     void canConstruct() {

@@ -1,7 +1,7 @@
 package leetcode;
 
 //53
-public class MaximumSubarray {
+public class _53_MaximumSubarray {
 
     // kadan algo
     public int maxSubArray(int[] nums) {

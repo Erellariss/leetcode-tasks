@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MaximumSubarrayTest {
 
-    MaximumSubarray solution = new MaximumSubarray();
+    _53_MaximumSubarray solution = new _53_MaximumSubarray();
 
     @Test
     void maxSubArray() {

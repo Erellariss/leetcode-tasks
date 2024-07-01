@@ -2,7 +2,7 @@ package leetcode;
 
 import leetcode.utils.TreeNode;
 
-public class BalancedBinaryTree {
+public class _110_BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
         return getBalancedDepth(root) >= 0;
     }

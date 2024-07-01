@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InsertIntervalTest {
 
-    InsertInterval solution = new InsertInterval();
+    _57_InsertInterval solution = new _57_InsertInterval();
 
     @Test
     void insert() {

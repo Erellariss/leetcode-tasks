@@ -7,14 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InvertBinaryTreeTest {
 
-    private InvertBinaryTree testee = new InvertBinaryTree();
+    private _226_InvertBinaryTree testee = new _226_InvertBinaryTree();
 
 
     @Test
     void invertTree1() {
-        TreeNode actual = testee.invertTree(TreeNode.buildTree(new int[]{
-                4, 2, 7, 1, 3, 6, 9
-        }));
+        TreeNode actual = testee.invertTree(TreeNode.buildTree(4, 2, 7, 1, 3, 6, 9));
         assertArrayEquals(new int[]{4, 7, 2, 9, 6, 3, 1}, TreeNode.toIntArray(actual));
     }
 
@@ -27,7 +25,7 @@ class InvertBinaryTreeTest {
     }
     @Test
     void invertTree3() {
-        TreeNode actual = testee.invertTree(TreeNode.buildTree(new int[]{}));
+        TreeNode actual = testee.invertTree(TreeNode.buildTree());
         assertArrayEquals(null, TreeNode.toIntArray(actual));
     }
 }

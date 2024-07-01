@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 //57
-public class InsertInterval {
+public class _57_InsertInterval {
 
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new LinkedList<>();

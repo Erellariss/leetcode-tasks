@@ -8,8 +8,8 @@ class ContainsDuplicatesTest {
 
     @Test
     public void containsDuplicates() {
-        assertTrue(ContainsDuplicates.containsDuplicate(new int[] {1,2,3,1}));
-        assertFalse(ContainsDuplicates.containsDuplicate(new int[] {1,2,3}));
+        assertTrue(_217_ContainsDuplicates.containsDuplicate(new int[] {1,2,3,1}));
+        assertFalse(_217_ContainsDuplicates.containsDuplicate(new int[] {1,2,3}));
     }
 
 }

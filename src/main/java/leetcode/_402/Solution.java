@@ -2,9 +2,6 @@ package leetcode._402;
 
 import java.util.Stack;
 
-/**
- * todo
- */
 class Solution {
     public String removeKdigits(String num, int k) {
         if (k == num.length()) {

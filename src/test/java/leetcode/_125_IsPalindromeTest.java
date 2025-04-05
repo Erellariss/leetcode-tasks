@@ -3,11 +3,9 @@ package leetcode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+class _125_IsPalindromeTest {
 
-class IsPalindromeTest {
-
-    IsPalindrome testee = new IsPalindrome();
+    _125_IsPalindrome testee = new _125_IsPalindrome();
 
     @Test
     void isPalindrome() {

@@ -1,9 +1,6 @@
 package leetcode;
 
-import static java.lang.Character.isLetterOrDigit;
-import static java.lang.Character.toLowerCase;
-
-public class IsPalindrome {
+public class _125_IsPalindrome {
     public boolean isPalindrome(String s) {
         int start = 0;
         int end = s.length() - 1;
@@ -24,5 +21,15 @@ public class IsPalindrome {
             end--;
         }
         return true;
+    }
+
+    private int toLowerCase(char c) {
+        return c >= 'A' && c <= 'Z' ? c + 'a' - 'A' : c;
+    }
+
+    private boolean isLetterOrDigit(char c) {
+        return c >= 'A' && c <= 'Z'
+                || c >= 'a' && c <= 'z'
+                || c >= '0' && c <= '9';
     }
 }

@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 #parse("File Header.java")
 class ${NAME} {
 
-    private ${CLASS_NAME} testee = new ${CLASS_NAME}();
+    private final ${CLASS_NAME} testee = new ${CLASS_NAME}();
 
     @ParameterizedTest
     @MethodSource("vals")

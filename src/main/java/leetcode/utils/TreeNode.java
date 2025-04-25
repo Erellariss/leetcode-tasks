@@ -2,6 +2,7 @@ package leetcode.utils;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Queue;
 
 public class TreeNode {
@@ -12,11 +13,11 @@ public class TreeNode {
     TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -107,5 +108,20 @@ public class TreeNode {
     @Override
     public String toString() {
         return String.format("TreeNode[%s]", val);
+    }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (!(o instanceof TreeNode treeNode)) return false;
+
+        return val == treeNode.val && Objects.equals(left, treeNode.left) && Objects.equals(right, treeNode.right);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = val;
+        result = 31 * result + Objects.hashCode(left);
+        result = 31 * result + Objects.hashCode(right);
+        return result;
     }
 }

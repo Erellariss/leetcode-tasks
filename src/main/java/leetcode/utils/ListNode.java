@@ -12,7 +12,7 @@ public class ListNode {
     ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
@@ -23,10 +23,18 @@ public class ListNode {
 
     public static ListNode of(int... vals) {
         ListNode head = null;
-        for (int i = vals.length - 1; i >= 0 ; i--) {
+        for (int i = vals.length - 1; i >= 0; i--) {
             head = new ListNode(vals[i], head);
         }
         return head;
+    }
+
+    @Override
+    public String toString() {
+        if (next == null) {
+            return "[" + this.val + "]";
+        }
+        return "[" + this.val + "] -> " + next;
     }
 
     public static List<ListNode> ofList(int... vals) {

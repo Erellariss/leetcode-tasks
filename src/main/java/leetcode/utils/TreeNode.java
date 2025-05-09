@@ -1,5 +1,6 @@
 package leetcode.utils;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -36,26 +37,8 @@ public class TreeNode {
         return result;
     }
 
-    public static TreeNode buildTree(int... nodes) {
-        if (nodes == null || nodes.length == 0) {
-            return null;
-        }
-        TreeNode root = new TreeNode(nodes[0]);
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        int i = 1;
-        while (i < nodes.length) {
-            TreeNode curr = q.remove();
-
-            curr.left = new TreeNode(nodes[i++]);
-            q.add(curr.left);
-
-            if (i < nodes.length) {
-                curr.right = new TreeNode(nodes[i++]);
-                q.add(curr.right);
-            }
-        }
-        return root;
+    public static TreeNode buildTree(Integer... nodes) {
+        return buildTree(Arrays.asList(nodes));
     }
 
     public static TreeNode buildTree(List<Integer> nodes) {

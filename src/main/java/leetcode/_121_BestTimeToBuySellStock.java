@@ -10,6 +10,7 @@ public class _121_BestTimeToBuySellStock {
         for (int i = 1; i < prices.length; i++) {
             if (prices[i] < buyPrice) {
                 buyPrice = prices[i];
+                continue; // skip as no makes sense to count profit
             }
 
             profit = Math.max(profit, prices[i] - buyPrice);

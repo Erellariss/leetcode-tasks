@@ -3,8 +3,59 @@ package leetcode;
 public class _151_ReverseWordsInAString {
     public String reverseWords(String s) {
 //        return reverseWordsEasyWay(s);
-        return reverseWordsHardWay(s);
+//        return reverseWordsHardWay(s);
+        return reverseWordsInPlace(s);
     }
+
+    private String reverseWordsInPlace(String s) {
+        char[] c = s.toCharArray();
+        reverse(c, 0, c.length - 1);
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] != ' ') {
+                int wordEnd = wordEnd(c, i);
+                reverse(c, i, wordEnd);
+                i = wordEnd + 1;
+            }
+        }
+
+        return cleanSpaces(c);
+    }
+
+    private String cleanSpaces(char[] c) {
+        int n = c.length, i = 0, j = 0;
+
+        while (j < n) {
+            while (j < n && c[j] == ' ') j++;
+            while (j < n && c[j] != ' ') c[i++] = c[j++];
+            while (j < n && c[j] == ' ') j++;
+            if (j < n) c[i++] = ' ';
+        }
+
+        return new String(c, 0, i);
+    }
+
+
+    private void reverse(char[] c, int start, int end) {
+        while (start < end) {
+            swap(c, start++, end--);
+        }
+    }
+
+    private int wordEnd(char[] c, int i) {
+        for (; i < c.length; i++) {
+            if (c[i] == ' ') {
+                return i - 1;
+            }
+        }
+        return c.length - 1;
+    }
+
+    private static void swap(char[] c, int a, int b) {
+        char tmp = c[a];
+        c[a] = c[b];
+        c[b] = tmp;
+    }
+
 
     private String reverseWordsEasyWay(String s) {
         String[] arr = s.trim().split("\\s+");
@@ -22,6 +73,8 @@ public class _151_ReverseWordsInAString {
     private String reverseWordsHardWay(String s) {
         StringBuilder sb = new StringBuilder();
         int start = 0;
+
+        //region trim
         while (s.charAt(start) == ' ') {
             start++;
         }
@@ -29,6 +82,7 @@ public class _151_ReverseWordsInAString {
         while (s.charAt(end) == ' ') {
             end--;
         }
+        //endregion
         char prevChar = s.charAt(end--);
         sb.append(prevChar);
         for (int i = end; i >= start; i--) {

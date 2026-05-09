@@ -4,7 +4,7 @@ public class _42_FirstMissingPositive {
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;
         for (int i = 0; i < n; i++) { // time complexity is O(n), not O(n^2). As swap is going "recursively"
-            while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) {
+            while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) { // not "if", as we might need to do several iteration
                 swap(nums, i, nums[i] - 1);
             }
         }

@@ -4,29 +4,20 @@ public class _169_MajorityElement {
 
     // Boyer-Moore Majority Voting Algorithm
     public int majorityElement(int[] nums) {
-        int count = 0, candidate = -1;
+        return boyerMooreV2(nums);
+    }
+
+    private int boyerMooreV2(int[] nums) {
+        int candidate = nums[0], count = 0;
 
         for (int num : nums) {
             if (count == 0) {
                 candidate = num;
-                count = 1;
-            } else if (candidate == num) {
-                count++;
-            } else {
-                count--;
             }
+            count += (num == candidate)? 1 : -1;
         }
 
-        count = 0;
-        for (int num : nums) {
-            if (num == candidate) {
-                count++;
-            }
-            if (count > nums.length / 2) {
-                return candidate;
-            }
-        }
-        return -1;
+        return candidate;
     }
 
 }
